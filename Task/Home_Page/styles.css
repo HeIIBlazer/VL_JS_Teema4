@@ -1,0 +1,58 @@
+body {
+    background-image: url(Images/HomePage/BackGround.jpeg);
+}
+
+.logo_mini {
+    padding-top:4px;
+    height: 100px;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background: rgba(226, 183, 183, 0.2);
+}
+
+nav ul {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+nav ul li {
+    width: 186px;
+    margin: 0 auto;
+    list-style: none;
+    color: black;
+    font-family: 'Alice';
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    transition: ease all .5s;
+    border: 1px solid;
+    background-color:rgb(180, 164, 75);
+
+}
+
+nav ul li:hover {
+    border-radius: 77px;
+    transition: ease all .5s;
+}
+
+
+nav ul li a {
+    color: rgb(47, 117, 119);
+    text-decoration: none;
+}
+
+p {
+    color: white;
+}
+
+h2{
+    color: white;
+}

@@ -15,22 +15,27 @@ var champions = [
         Biography:"Among the secretive, Ionian warriors known as the Kinkou, Shen serves as their leader, the Eye of Twilight. He longs to remain free from the confusion of emotion, prejudice, and ego, and walks the unseen path of dispassionate judgment between the spirit realm and the physical world. Tasked with enforcing the equilibrium between them, Shen wields blades of steel and arcane energy against any who would threaten it.",
         Skills:[
         { 
+                Passive_Image: "Images/Top laners/Shen/Passive.jpg",
             Passive:"Ki Barrier",
             Passive_info:"After casting a spell, Shen gets a shield. Affecting other champions reduces the cooldown of this effect."
         },
         {
+            First_Skill_Image: "Images/Top laners/Shen/Q.jpg",
             First_Skill:"Twilight Assault",
             First_Skill_info:"Shen recalls his spirit blade to attack with it, dealing damage based on the target's max health. The attacks are greatly empowered if it collides with an enemy champion, and all collided enemies are slowed while running away from Shen."
         },
         {
+            Second_Skill_Image: "Images/Top laners/Shen/W.jpg",
             Second_Skill:"Spirits Refuge",
             Second_Skill_info:"Attacks that would hit Shen or his allies near his spirit blade are blocked."
         },
         {
+            Third_Skill_Image: "Images/Top laners/Shen/E.jpg",
             Third_Skill:"Shadow Dash",
             Third_Skill_info:"Shen dashes in a direction, taunting enemies in his path."
         },
         {
+            Ultimate_Image: "Images/Top laners/Shen/R.jpg",
             Ultimate:"Stand United",
             Ultimate_info:"Shen shields target allied champion from incoming damage, and soon after teleports to their location."
         }
@@ -45,6 +50,7 @@ var champions = [
         Biography:"Gnar is a primeval yordle whose playful antics can erupt into a toddler's outrage in an instant, transforming him into a massive beast bent on destruction. Frozen in True Ice for millennia, the curious creature broke free and now hops about a changed world he sees as exotic and wondrous. Delighted by danger, Gnar flings whatever he can at his enemies, be it his bonetooth boomerang, or a nearby building.",
         Skills:[
             {
+                Passive_Image: "Images/Top laners/Gnar/Passive.jpg",
                 Passive:"Rage Gene",
                 Passive_info:"While in combat Gnar generates Rage. At maximum Rage his next ability will transform him into Mega Gnar, granting increased survivability and access to new spells."
             },
@@ -75,6 +81,7 @@ var champions = [
         Biography:"Ornn is the Freljordian spirit of forging and craftsmanship. He works in the solitude of a massive smithy, hammered out from the lava caverns beneath the volcano Hearth-Home. There he stokes bubbling cauldrons of molten rock to purify ores and fashion items of unsurpassed quality. When other deities—especially Volibear—walk the earth and meddle in mortal affairs, Ornn arises to put these impetuous beings back in their place, either with his trusty hammer or the fiery power of the mountains themselves.",
         Skills:[
             {
+                Passive_Image: "Images/Top laners/Ornn/Passive.jpg",
                 Passive:"Living Forge",
                 Passive_info:"Ornn gains an additional bonus Armor and Magic Resistance from all sources. Ornn can spend gold to forge non-consumable items anywhere. Additionally, he can create masterwork items for himself and for his allies."
             },
@@ -106,6 +113,7 @@ var champions = [
         Biography:"A master of Ionia's ancient martial arts, Lee Sin is a principled fighter who channels the essence of the dragon spirit to face any challenge. Though he lost his sight many years ago, the warrior-monk has devoted his life to protecting his homeland against any who would dare upset its sacred balance. Enemies who underestimate his meditative demeanor will endure his fabled burning fists and blazing roundhouse kicks.",
         Skills:[
             {
+                Passive_Image: "Images/Junglers/Lee_Sin/Passive.jpg",
                 Passive:"Flurry",
                 Passive_info:"After Lee Sin uses an ability, his next 2 basic attacks gain Attack Speed and return Energy."
             },
@@ -137,6 +145,7 @@ var champions = [
         Biography:"A peerless practitioner of lethal shadow magic, Shieda Kayn battles to achieve his true destiny—to one day lead the Order of Shadow into a new era of Ionian supremacy. He wields the sentient darkin weapon Rhaast, undeterred by its creeping corruption of his body and mind. There are only two possible outcomes: either Kayn bends the weapon to his will... or the malevolent blade consumes him completely, paving the way for the destruction of all Runeterra.",
         Skills:[
             {
+                Passive_Image: "Images/Junglers/Kayn/Passive.jpg",
                 Passive:"The Darkin Scythe",
                 Passive_info:"Kayn wields an ancient weapon and fights Rhaast, the darkin within it, for control. Either the Darkin will triumph, or Kayn will master Rhaast and become the Shadow Assassin. Darkin: Heal for a percentage of spell damage dealt to champions. Shadow Assassin: For the first few seconds in combat with enemy champions, deal bonus damage."
             },
@@ -167,6 +176,7 @@ var champions = [
         Biography:"Something has awoken in Runeterra. Something ancient. Something terrible. The ageless horror known as Fiddlesticks stalks the edges of mortal society, drawn to areas thick with paranoia where it feeds upon terrorized victims. Wielding a jagged scythe, the haggard, makeshift creature reaps fear itself, shattering the minds of those unlucky enough to survive in its wake. Beware the sounding of the crow, or the whispering of the shape that appears 'almost' human… Fiddlesticks has returned.",
         Skills:[
             {
+                Passive_Image: "Images/Junglers/Fiddlesticks/Passive.jpg",
                 Passive:"A Harmless Scarecrow",
                 Passive_info:"Fiddlesticks' trinket is replaced by scarecrow effigies."
             },
@@ -197,6 +207,7 @@ var champions = [
         Biography:"An Ionian of deep resolve, Yasuo is an agile swordsman who wields the air itself against his enemies. As a proud young man, he was falsely accused of murdering his master—unable to prove his innocence, he was forced to slay his own brother in self defense. Even after his master's true killer was revealed, Yasuo still could not forgive himself for all he had done, and now wanders his homeland with only the wind to guide his blade.",
         Skills:[
             {
+                Passive_Image: "Images/Mid Laners/Yasuo/Passive.jpg",
                 Passive:"Way Of The Wanderer",
                 Passive_info:"Yasuo's Critical Strike Chance is increased. Additionally, Yasuo builds toward a shield whenever he is moving. The shield triggers when he takes damage from a champion or monster."
             },
@@ -227,6 +238,7 @@ var champions = [
         Biography:"A prodigy from the rough streets of Zaun, Ekko manipulates time to twist any situation to his advantage. Using his own invention, the Zero Drive, he explores the branching possibilities of reality to craft the perfect moment. Though he revels in this freedom, when there's a threat to his friends he'll do anything to defend them. To outsiders, Ekko seems to achieve the impossible the first time, every time.",
         Skills:[
             {
+                Passive_Image: "Images/Mid Laners/Ekko/Passive.jpg",
                 Passive:"Z-Drive Resonance",
                 Passive_info:"Every third attack or damaging spell on the same target deals bonus magic damage, and grants Ekko a burst of speed if the target is a champion."
             },
@@ -257,6 +269,7 @@ var champions = [
         Biography:"Fizz is an amphibious yordle, who dwells among the reefs surrounding Bilgewater. He often retrieves and returns the tithes cast into the sea by superstitious captains, but even the saltiest of sailors know better than to cross him—for many are the tales of those who have underestimated this slippery character. Often mistaken for some manner of capricious ocean spirit, he seems able to command the beasts of the deep, and delights in confounding his allies and enemies alike.",
         Skills:[
             {
+                Passive_Image: "Images/Mid Laners/Fizz/Passive.jpg",
                 Passive:"Nimble Fighter",
                 Passive_info:"Fizz can move through units and takes a flat amount of reduced damage from all sources."
             },
@@ -287,6 +300,7 @@ var champions = [
         Biography:"Shauna Vayne is a deadly, remorseless Demacian monster hunter, who has dedicated her life to finding and destroying the demon that murdered her family. Armed with a wrist-mounted crossbow and a heart full of vengeance, she is only truly happy when slaying practitioners or creations of the dark arts, striking from the shadows with a flurry of silver bolts",
         Skills:[
             {
+                Passive_Image: "Images/ADC/Vayne/Passive.jpg",
                 Passive:"Night Hunter",
                 Passive_info:"Vayne ruthlessly hunts evil-doers, gaining 30 Move Speed when moving toward nearby enemy champions."
             },
@@ -317,6 +331,7 @@ var champions = [
         Biography:"Deadly and precise, Xayah is a vastayan revolutionary waging a personal war to save her people. She uses her speed, guile, and razor-sharp feather blades to cut down anyone who stands in her way. Xayah fights alongside her partner and lover, Rakan, to protect their dwindling tribe, and restore their race to her vision of its former glory.",
         Skills:[
             {
+                Passive_Image: "Images/ADC/Xayah/Passive.jpg",
                 Passive:"Clean Cuts",
                 Passive_info:"After using an ability, Xayah's next basic attacks will hit all targets along their path and leave a Feather."
             },
@@ -347,6 +362,7 @@ var champions = [
         Biography:"Lucian, a Sentinel of Light, is a grim hunter of undying spirits, pursuing them relentlessly and annihilating them with his twin relic pistols. After the wraith Thresh slew his wife, Lucian embarked on the path of vengeance—but even with her return to life, his rage is undiminished. Merciless and single-minded, Lucian will stop at nothing to protect the living from the long-dead horrors of the Black Mist.",
         Skills:[
             {
+                Passive_Image: "Images/ADC/Lucian/Passive.jpg",
                 Passive:"LightSlinger",
                 Passive_info:"Whenever Lucian uses an ability, his next attack becomes a double-shot. When Lucian is empowered by another Ally, his next 2 basic attacks will deal bonus magic damage."
             },
@@ -376,6 +392,7 @@ var champions = [
         Biography:"Sadistic and cunning, Thresh is an ambitious and restless spirit of the Shadow Isles. Once the custodian of countless arcane secrets, he was undone by a power greater than life or death, and now sustains himself by tormenting and breaking others with slow, excruciating inventiveness. His victims suffer far beyond their brief mortal coil as Thresh wreaks agony upon their souls, imprisoning them in his unholy lantern to torture for all eternity.",
         Skills:[
             {
+                Passive_Image: "Images/Supports/Thresh/Passive.jpg",
                 Passive:"Damnation",
                 Passive_info:"Thresh can harvest the souls of enemies that die near him, permanently granting him Armor and Ability Power."
             },
@@ -406,6 +423,7 @@ var champions = [
         Biography:"As mercurial as he is charming, Rakan is an infamous vastayan troublemaker and the greatest battle-dancer in Lhotlan tribal history. To the humans of the Ionian highlands, his name has long been synonymous with wild festivals, uncontrollable parties, and anarchic music. Few would suspect this energetic, traveling showman is also partner to the rebel Xayah, and is dedicated to her cause.",
         Skills:[
             {
+                Passive_Image: "Images/Supports/Rakan/Passive.jpg",
                 Passive:"Fey Feathers",
                 Passive_info:"Rakan periodically gains a shield."
             },
@@ -436,6 +454,7 @@ var champions = [
         Biography:"The yordle mage Lulu is known for conjuring dreamlike illusions and fanciful creatures as she roams Runeterra with her fairy companion Pix. Lulu shapes reality on a whim, warping the fabric of the world, and what she views as the constraints of this mundane, physical realm. While others might consider her magic at best unnatural, and at worst dangerous, she believes everyone could use a touch of enchantment.",
         Skills:[
             {
+                Passive_Image: "Images/Supports/Lulu/Passive.jpg",
                 Passive:"Pix, Faerie Companion",
                 Passive_info:"Pix fires magical bolts of energy whenever the champion he's following attacks another enemy unit. These bolts are homing, but can be intercepted by other units."
             },

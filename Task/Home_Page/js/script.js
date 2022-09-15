@@ -67,16 +67,20 @@ function Detail(item){
             let ultimate = skills.find(skill => skill.Ultimate)
 
             var header='<h2>'+Detail[i].Name+'</h2>'; // строим заголовок
-            text+='<div style= "float:left;">'
-            text += '<a data-title="Champion" data-lightbox="image" href="' + Detail[i].Image + '"><img src="' + Detail[i].Image + '" /></a>'; //картинка
+            text += '<div>'
+            text += '<div class=" Champion_Picture"><a data-title="Champion" data-lightbox="image-1" href="' + Detail[i].Image + '"><img src="' + Detail[i].Image + '" /></a></div>'; //картинка
             text += '<p>' + Detail[i].Biography + '</p>'; //Биография
 
-            text += '<div>'
-            text += '<p><b>Passive: </b>' + passive.Passive + '</p> <p><b>How It Works: </b></p>' + passive.Passive_info + '<br><br>';
-            text += '<p><b>Q Abillity: </b>' + first.First_Skill + '</p> <p><b>How It Works: </b></p>' + first.First_Skill_info + '<br><br>';
-            text += '<p><b>W Abillity: </b>' + second.Second_Skill + '</p> <p><b>How It Works: </b></p>' + second.Second_Skill_info + '<br><br>';
-            text += '<p><b>E Abillity: </b>' + third.Third_Skill + '</p> <p><b>How It Works: </b></p>' + third.Third_Skill_info + '<br><br>';
-            text += '<p><b>R Abillity: </b>' + ultimate.Ultimate + '</p> <p><b>How It Works: </b></p>' + ultimate.Ultimate_info + '<br><br>';
+            text += '<div class="Abilities">'
+            text += '<div class="Ability"><div><a data-title="Passive" data-lightbox="image" href="' + passive.Passive_Image + '"><img src="' + passive.Passive_Image + '" /></a></div><p><b>Passive:<br> </b>' + passive.Passive + '</p> <p><b>How It Works: </b>' + passive.Passive_info + '</p><br><br></div>';
+
+            text += '<div class="Ability"><div><a data-title="Q" data-lightbox="image" href="' + first.First_Skill_Image + '"><img src="' + first.First_Skill_Image + '" /></a></div><p><b>Q Abillity:<br> </b>' + first.First_Skill + '</p> <p><b>How It Works: </b>' + first.First_Skill_info + '</p><br><br></div>';
+
+            text += '<div class="Ability"> <div><a data-title="W" data-lightbox="image" href="' + second.Second_Skill_Image + '"><img src="' + second.Second_Skill_Image + '" /></a></div><p><b>W Abillity:<br> </b>' + second.Second_Skill + '</p> <p><b>How It Works: </b>' + second.Second_Skill_info + '</p><br><br></div>';
+
+            text += '<div class="Ability"><div><a data-title="Passive" data-lightbox="image" href="' + third.Third_Skill_Image + '"><img src="' + third.Third_Skill_Image + '" /></a></div><p><b>E Abillity:<br> </b>' + third.Third_Skill + '</p> <p><b>How It Works: </b>' + third.Third_Skill_info + '</p><br><br></div>';
+
+            text += '<div class="Ability"><div><a data-title="Passive" data-lightbox="image" href="' + ultimate.Ultimate_Image + '"><img src="' + ultimate.Ultimate_Image + '" /></a></div><p><b>R Abillity:<br> </b>' + ultimate.Ultimate + '</p> <p><b>How It Works: </b>' + ultimate.Ultimate_info + '</p><br><br></div>';
             text += '</div>'
 
 

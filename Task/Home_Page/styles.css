@@ -1,5 +1,7 @@
 body {
     background-image: url(Images/HomePage/BackGround.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .logo_mini {
@@ -55,4 +57,89 @@ p {
 
 h2{
     color: white;
+}
+
+.Line{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+
+}
+
+.lane{
+    text-align: center;
+    width: 600px;
+    border: 3px solid;
+    border-color: black;
+    border-radius: 40px;
+    background-color: rgba(180, 164, 75, 0.721);
+    color: rgb(26, 103, 106);
+}
+
+.Home_Page {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.Big_Logo{
+    width:800px;
+}
+
+.Home_Text{
+    border: 1px solid;
+    font-size: 40px;
+    width: 1750px;
+    text-align: center;
+    background-color: rgba(118, 101, 101, 0.441);
+    color: black;
+}
+
+.Loading{
+    height: 800px;
+    width: 475px;
+    border: 2px solid gold;
+}
+
+.Mini_Loading{
+    display:flex;
+    flex-direction: column;
+    padding-right: 100px;
+
+}
+
+.Big_Loading{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Text_Loading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid;
+    background-color:rgba(118, 101, 101, 0.441) ;
+    
+
+}
+
+.Champ_Name{
+    font-size: 28px;
+    font-weight: 800;
+    color: black;
+}
+
+.Text_Loading a{
+    color: rgb(33, 82, 83);
+    text-decoration: none;
+    padding: 10px;
+    font-size: 25px;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: rgba(180, 164, 75, 0.721);
 }

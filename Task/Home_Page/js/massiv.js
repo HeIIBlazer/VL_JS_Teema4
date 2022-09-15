@@ -2,8 +2,9 @@ var category = ["Home Page","Top lane","Jungle","Mid Lane","ADC","Support", "PLA
 
 var Home_Page_Content = [
     {
+        Lane:"Home Page",
         Logo:"Images/HomePage/League_logo_big.png",
-        text:""
+        text:"League of Legends (LoL), commonly referred to as League, is a 2009 multiplayer online battle arena video game developed and published by Riot Games. Inspired by Defense of the Ancients, a custom map for Warcraft III, Riot's founders sought to develop a stand-alone game in the same genre. Since its release in October 2009, League has been free-to-play and is monetized through purchasable character customization. The game is available for Microsoft Windows and macOS.<br> In the game, two teams of five players battle in player-versus-player combat, each team occupying and defending their half of the map. Each of the ten players controls a character, known as a champion, with unique abilities and differing styles of play. During a match, champions become more powerful by collecting experience points, earning gold, and purchasing items to defeat the opposing team. In League's main mode, Summoner's Rift, a team wins by pushing through to the enemy base and destroying their Nexus, a large structure located within.<br> <span style='color:gold'> On this site, we will tell you about 3 champions on each line that you should play right now!</span>"
     }
 ]
 
@@ -34,7 +35,8 @@ var champions = [
             Ultimate_info:"Shen shields target allied champion from incoming damage, and soon after teleports to their location."
         }
         ],
-        Image:"Images/Top Laners/Shen.jpg"
+        Mini_Image:"Images/Top Laners/Shen/Shen_mini.jpg",
+        Image:"Images/Top Laners/Shen/Shen.jpg"
     },
 
     {
@@ -63,7 +65,8 @@ var champions = [
                 Ultimate_info:"Mega Gnar throws everything around him in a chosen direction, dealing damage and slowing them. Any enemy that hits a wall is stunned and takes bonus damage."
             }
         ],
-        Image:"Images/Top Laners/Gnar.jpg"
+        Mini_Image:"Images/Top Laners/Gnar/Gnar_mini.jpg",
+        Image:"Images/Top Laners/Gnar/Gnar.jpg"
     },
 
     {
@@ -92,7 +95,8 @@ var champions = [
                 Ultimate_info:"Ornn summons a massive elemental at a location which travels toward him with increasing speed. Enemies run over by the elemental take damage, are slowed and are made Brittle. Ornn can recast the ability to charge into the elemental, redirecting it in the direction he hits it, causing the elemental to affect any enemies it runs over to be knocked up, dealing the same damage and re-applying Brittle."
             }
         ],
-        Image:"Images/Top Laners/Ornn.jpg",
+        Mini_Image:"Images/Top Laners/Ornn/Ornn_mini.jpg",
+        Image:"Images/Top Laners/Ornn/Ornn.jpg"
 
     },
 
@@ -122,7 +126,8 @@ var champions = [
                 Ultimate_info:"Lee Sin performs a powerful roundhouse kick launching his target back, dealing physical damage to the target and any enemies they collide with. Enemies the target collides with are knocked into the air for a short duration. This technique was taught to him by Jesse Perring, although Lee Sin does not kick players off the map."
             }
         ],
-        Image:"Images/Junglers/Lee_Sin.jpg"
+        Mini_Image:"Images/Junglers/Lee_Sin/Lee_Sin_mini.jpg",
+        Image:"Images/Junglers/Lee_Sin/Lee_Sin.jpg"
 
     },
 
@@ -152,7 +157,8 @@ var champions = [
                 Ultimate_info:"Kayn hides in an enemy's body, dealing massive damage when he bursts out."
             }
         ],
-        Image:"Images/Junglers/Kayn.jpg"
+        Mini_Image:"Images/Junglers/Kayn/Kayn_mini.jpg",
+        Image:"Images/Junglers/Kayn/Kayn.jpg"
     },
 
     {
@@ -181,7 +187,8 @@ var champions = [
                 Ultimate_info:"Fiddlesticks slashes an area with its scythe, slowing all enemies hit and silencing enemies hit in the center of the slash."
             }
         ],
-        Image:"Images/Junglers/Fiddlesticks.jpg"
+        Mini_Image:"Images/Junglers/Fiddlesticks/Fiddlesticks_mini.jpg",
+        Image:"Images/Junglers/Fiddlesticks/Fiddlesticks.jpg"
     },
 
     {
@@ -210,7 +217,8 @@ var champions = [
                 Ultimate_info:"Blinks to an Airborne enemy champion, dealing physical damage and holding all Airborne enemies in the area in the air. Grants maximum Flow but resets all stacks of Gathering Storm. For a moderate time afterwards, Yasuo's critical strikes gain significant Bonus Armor Penetration."
             }
         ],
-        Image:"Images/Mid Laners/Yasuo.jpg"
+        Mini_Image:"Images/Mid Laners/Yasuo/Yasuo_mini.jpg",
+        Image:"Images/Mid Laners/Yasuo/Yasuo.jpg"
     },
 
     {
@@ -239,7 +247,8 @@ var champions = [
                 Ultimate_info:"Ekko shatters his timeline, becoming untargetable and rewinding to a more favorable point in time. He returns to whenever he was a few seconds ago, and heals for a percentage of the damage received in that duration. Enemies near his arrival zone take massive damage."
             }
         ],
-        Image:"Images/Mid Laners/Ekko.jpg"
+        Mini_Image:"Images/Mid Laners/Ekko/Ekko_mini.jpg",
+        Image:"Images/Mid Laners/Ekko/Ekko.jpg"
     },
 
     {
@@ -268,7 +277,8 @@ var champions = [
                 Ultimate_info:"Fizz tosses a fish in a direction that attaches to any champion that touches it, slowing the target. After a short delay, a shark erupts from the ground, knocking up the target and knocking any nearby enemies aside. All enemies hit are dealt magic damage and slowed."
             }
         ],
-        Image:"Images/Mid Laners/Fizz.jpg"
+        Mini_Image:"Images/Mid Laners/Fizz/Fizz_mini.jpg",
+        Image:"Images/Mid Laners/Fizz/Fizz.jpg"
     },
 
     {
@@ -297,7 +307,8 @@ var champions = [
                 Ultimate_info:"Readying herself for an epic confrontation, Vayne gains increased Attack Damage, Invisibility during Tumble, reduced Tumble cooldown, and more bonus Move Speed from Night Hunter"
             }
         ],
-        Image:"Images/ADC/Vayne.jpg",
+        Mini_Image:"Images/ADC/Vayne/Vayne_mini.jpg",
+        Image:"Images/ADC/Vayne/Vayne.jpg"
     },
 
     {
@@ -326,7 +337,8 @@ var champions = [
                 Ultimate_info:"Xayah leaps into the air becoming untargetable and throwing out a fan of daggers, dropping Feathers she can recall."
             }
         ],
-        Image:"Images/ADC/Xayah.jpg",
+        Mini_Image:"Images/ADC/Xayah/Xayah_mini.jpg",
+        Image:"Images/ADC/Xayah/Xayah.jpg"
     },
 
     {
@@ -355,7 +367,8 @@ var champions = [
                 Ultimate_info:"Lucian unleashes a torrent of shots from his weapons."
             }
         ],
-        Image:"Images/ADC/Lucian.jpg",
+        Mini_Image:"Images/ADC/Lucian/Lucian_mini.jpg",
+        Image:"Images/ADC/Lucian/Lucian.jpg"
     },
     {
         Lane:"Support",
@@ -383,7 +396,8 @@ var champions = [
                 Ultimate_info:"A prison of walls that slow and deal damage if broken.Lucian unleashes a torrent of shots from his weapons."
             }
         ],
-        Image:"Images/Supports/Thresh.jpg",
+        Mini_Image:"Images/Supports/Thresh/Thresh_mini.jpg",
+        Image:"Images/Supports/Thresh/Thresh.jpg"
     },
 
     {
@@ -412,7 +426,8 @@ var champions = [
                 Ultimate_info:"Gains Move Speed, charming and dealing magic damage to enemies touched."
             }
         ],
-        Image:"Images/Supports/Rakan.jpg",
+        Mini_Image:"Images/Supports/Rakan/Rakan_mini.jpg",
+        Image:"Images/Supports/Rakan/Rakan.jpg"
     },
 
     {
@@ -441,7 +456,8 @@ var champions = [
                 Ultimate_info:"Lulu enlarges an ally, knocking nearby enemies into the air and granting the ally a large amount of bonus health. For the next few seconds, that ally gains an aura that slows nearby enemies."
             }
         ],
-        Image:"Images/Supports/Lulu.jpg",
+        Mini_Image:"Images/Supports/Lulu/Lulu_mini.jpg",
+        Image:"Images/Supports/Lulu/Lulu.jpg"
     },
 
 ];

@@ -7,30 +7,44 @@ $(document).ready(function() {
     }//for
 });
 
-function HomePage() {
-    var text = '';
 
-}
-
-//функиция вывода списка данных по ссылке из навигации
-//val - название категории
 function myContent(val){
-    var header='<h2>'+val+'</h2>';// строим заголовок - название категории
+    var header='<div class="Line"><h2 class="lane">'+val+'</h2></div>';// заголовок - название категории
     var text = '';
-    //FILTER - выбор записей по критерию - категория
     var NewChampions = champions.filter(a=>a.Lane==val);
+    var menu = Home_Page_Content.filter(a=>a.Lane==val);
     if(NewChampions.length>0){ //если в новом массиве есть данные
         //Перебираем массив и выводим данные на страницу HTML
+        text += '<div class="Big_Loading">';
         for(var i = 0; i<NewChampions.length;i++){
-            text+='<div style ="float:left;">';
-            text+='<img src="'+NewChampions[i].Image+'"style = "margin:5px;">';
-            //картинка
-            text+='<p>'+NewChampions[i].Name+'</p>'
-            //ссылка на просмотр одной записи
-            text+='<p><a href = "#" onClick = "Detail(`'+NewChampions[i].Name +'`)">Подробнее...</a></p>';
+            text+='<div class = "Mini_Loading">';
+
+                text+='<div>';
+                    text+='<img class="Loading" src="'+NewChampions[i].Mini_Image+'">';//картинка
+                text+='</div>';
+
+                text+='<div class="Text_Loading">';
+                    text+='<p class = "Champ_Name">'+NewChampions[i].Name+'</p>';
+                    text+='<p><a class = "Button_More" href = "#" onClick = "Detail(`'+NewChampions[i].Name +'`)">LEARN MORE</a></p>';
+                text+= '</div>';
+
             text+='</div>';
         }//for
+        text+='</div>';
         $("#content").html(header+text);
+    }else if(menu.length>0){
+        for(var i = 0; i < menu.length; i++) {
+            text += '<div class="Home_Page">'
+
+            text += '<div>'
+            text += '<img class="Big_Logo" src="'+menu[i].Logo+'"alt="big">';
+            text += '</div>';
+
+            text += '<p class = "Home_Text">'+menu[i].text+'</p>';
+            text += '</div>';
+
+            $("#content").html(text);
+        }
     }else{
         $("#content").html(header+"Данных нет");
     }

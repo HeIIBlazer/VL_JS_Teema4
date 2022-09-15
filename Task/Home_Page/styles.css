@@ -103,12 +103,14 @@ h2{
     height: 800px;
     width: 475px;
     border: 2px solid gold;
+    box-shadow: 1px 0px 40px;
 }
 
 .Mini_Loading{
     display:flex;
     flex-direction: column;
     padding-right: 100px;
+
 
 }
 
@@ -123,7 +125,7 @@ h2{
     flex-direction: column;
     align-items: center;
     border: 1px solid;
-    background-color:rgba(118, 101, 101, 0.441) ;
+    background-color:rgba(63, 62, 62, 0.441) ;
     
 
 }
@@ -132,6 +134,8 @@ h2{
     font-size: 28px;
     font-weight: 800;
     color: black;
+    background-color: rgba(63, 62, 62, 0.441);
+    border-radius:10px ;
 }
 
 .Text_Loading a{

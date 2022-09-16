@@ -166,26 +166,99 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+.Name{
+    display: flex;
+    justify-content: center;
+}
+
+.Name_text{
+    font-family: LeagueFont;
+    font-size: 45px;
+    letter-spacing: 0.1em;
+    border: 3px solid rgba(180, 164, 75, 0.721);
+    border-radius: 10px;
+    background-image: url(Images/HomePage/Abilities_Background.JPG);
+    padding:10px;
+}
+
+.Bio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.Bio_text{
+    width: 70%;
+    font-family: LeagueFont;
+    background-image: url(Images/HomePage/Abilities_Background.JPG);
+    font-size: 25px;
+    border: 1px solid;
+    border: 1px solid rgba(180, 164, 75, 0.721);
+    padding:15px;
+
 }
 
 .Abilities {
     display: flex;
     width: 100%;
     flex-direction: row;
-
     justify-content: center
 }
 
 .Ability {
+    display: flex;
+    flex-direction: column;
     background-image: url(Images/HomePage/Abilities_Background.JPG);
     background-size: cover;
     border: 1px solid rgba(180, 164, 75, 0.721);
     width: 18%;
     text-align: center;
     margin-right: 20px;
+    height: 100%;
 }
 
 .Ability p {
     font-size: 36px;
     font-family: LeagueFont;
+    padding: 15px;
+}
+    
+ul {
+    list-style: none;
+}
+    
+.Ability_Icon {
+    width: 37%;
+    height: 90%;
+    margin-top: 10px;
+    border: 4px solid rgba(180, 164, 75, 0.721);
+}
+
+    
+#dropdown{
+    display: none;
+}
+
+.BackButton{
+    display:flex;
+    justify-content: center;
+    margin-top:20px;
+}
+
+.BackButton_text{
+    width: 70%;
+    font-family: LeagueFont;
+    background-image: url(Images/HomePage/Abilities_Background.JPG);
+    font-size: 25px;
+    text-align: center;
+    border: 3px solid rgba(180, 164, 75, 0.721);
+    padding:15px;
+    text-decoration:none;
+    color: #fff;
+    margin-top:100px;
 }

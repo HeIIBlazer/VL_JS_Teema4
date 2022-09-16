@@ -141,7 +141,7 @@ var champions = [
                 Third_Skill_info:"Tempest: Lee Sin smashes the ground, sending out a shockwave that deals magic damage and reveals enemy units hit. If Tempest hits an enemy, Lee Sin can cast cripple for the next 3 seconds. Cripple: Lee Sin cripples nearby enemies damaged by Tempest, reducing their Move Speed for 4 seconds. Move Speed recovers gradually over the duration."
             },
             {
-                Ultimate_Image: "Images/Junglers/Lee_Sin/E.jpg",
+                Ultimate_Image: "Images/Junglers/Lee_Sin/R.jpg",
                 Ultimate:"Drago's Rage",
                 Ultimate_info:"Lee Sin performs a powerful roundhouse kick launching his target back, dealing physical damage to the target and any enemies they collide with. Enemies the target collides with are knocked into the air for a short duration. This technique was taught to him by Jesse Perring, although Lee Sin does not kick players off the map."
             }
@@ -412,14 +412,17 @@ var champions = [
                 First_Skill_info:"Lucian shoots a bolt of piercing light through a target."
             },
             {
+                Second_Skill_Image: "Images/ADC/Lucian/W.jpg",
                 Second_Skill:"Ardent Blaze",
                 Second_Skill_info:"Lucian shoots a missile that explodes in a star shape, marking and briefly revealing enemies. Lucian gains Move Speed for attacking marked enemies."
             },
             {
+                Third_Skill_Image: "Images/ADC/Lucian/E.jpg",
                 Third_Skill:"Relentless Pursuit",
                 Third_Skill_info:"Lucian quickly dashes a short distance. Lightslinger attacks reduce Relentless Pursuit's cooldown."
             },
             {
+                Ultimate_Image: "Images/ADC/Lucian/R.jpg",
                 Ultimate:"The Culling",
                 Ultimate_info:"Lucian unleashes a torrent of shots from his weapons."
             }
@@ -438,18 +441,22 @@ var champions = [
                 Passive_info:"Thresh can harvest the souls of enemies that die near him, permanently granting him Armor and Ability Power."
             },
             {
+                First_Skill_Image: "Images/Supports/Thresh/Q.jpg",
                 First_Skill:"Death Sentence",
                 First_Skill_info:"Thresh binds an enemy in chains and pulls them toward him. Activating this ability a second time pulls Thresh to the enemy."
             },
             {
+                Second_Skill_Image: "Images/Supports/Thresh/W.jpg",
                 Second_Skill:"Dark Passage",
                 Second_Skill_info:"Thresh throws out a lantern that shields nearby allied Champions from damage. Allies can click the lantern to dash to Thresh."
             },
             {
+                Third_Skill_Image: "Images/Supports/Thresh/E.jpg",
                 Third_Skill:"Flay",
                 Third_Skill_info:"Thresh's attacks wind up, dealing more damage the longer he waits between attacks. When activated, Thresh sweeps his chain, knocking all enemies hit in the direction of the blow."
             },
             {
+                Ultimate_Image: "Images/Supports/Thresh/R.jpg",
                 Ultimate:"The Box",
                 Ultimate_info:"A prison of walls that slow and deal damage if broken.Lucian unleashes a torrent of shots from his weapons."
             }
@@ -469,18 +476,22 @@ var champions = [
                 Passive_info:"Rakan periodically gains a shield."
             },
             {
+                First_Skill_Image: "Images/Supports/Rakan/Q.jpg",
                 First_Skill:"Gleaming Quill",
                 First_Skill_info:"Flings a magical feather that deals magic damage. Striking a champion or epic monster enables Rakan to heal his allies."
             },
             {
+                Second_Skill_Image: "Images/Supports/Rakan/W.jpg",
                 Second_Skill:"Grand Entrance",
                 Second_Skill_info:"Dashes to a location, knocking up nearby enemies on arrival."
             },
             {
+                Third_Skill_Image: "Images/Supports/Rakan/E.jpg",
                 Third_Skill:"Battle Dance",
                 Third_Skill_info:"Flies to an allied champion granting them a shield. Can be re-cast for free for a short duration."
             },
             {
+                Ultimate_Image: "Images/Supports/Rakan/R.jpg",
                 Ultimate:"The Quikness",
                 Ultimate_info:"Gains Move Speed, charming and dealing magic damage to enemies touched."
             }
@@ -500,18 +511,22 @@ var champions = [
                 Passive_info:"Pix fires magical bolts of energy whenever the champion he's following attacks another enemy unit. These bolts are homing, but can be intercepted by other units."
             },
             {
+                First_Skill_Image: "Images/Supports/Lulu/Q.jpg",
                 First_Skill:"Glitterlance",
                 First_Skill_info:"Pix and Lulu each fire a bolt of magical energy that damages and heavily slows all enemies it hits."
             },
             {
+                Second_Skill_Image: "Images/Supports/Lulu/W.jpg",
                 Second_Skill:"Whimsy",
                 Second_Skill_info:"If cast on an ally, grants them Attack Speed and Move Speed for a short time. If cast on an enemy, turns them into an adorable critter that can't attack or cast spells."
             },
             {
+                Third_Skill_Image: "Images/Supports/Lulu/E.jpg",
                 Third_Skill:"Help, Pix!",
                 Third_Skill_info:"If cast on an ally, commands Pix to jump to an ally and shield them. He then follows them and aids their attacks. If cast on an enemy, commands Pix to jump to an enemy and damage them. He then follows them and grants you vision of that enemy."
             },
             {
+                Ultimate_Image: "Images/Supports/Lulu/R.jpg",
                 Ultimate:"Wild Growth",
                 Ultimate_info:"Lulu enlarges an ally, knocking nearby enemies into the air and granting the ally a large amount of bonus health. For the next few seconds, that ally gains an aura that slows nearby enemies."
             }

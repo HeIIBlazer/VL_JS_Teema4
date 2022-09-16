@@ -54,7 +54,7 @@ function myContent(val){
 
 function Detail(item){
     var text = '';
-    // FILTER - поиск записи по критерию - название
+
     var Detail = champions.filter(d=>d.Name==item);
     if(Detail.length>0){
         for(var i = 0;i<Detail.length;i++){
@@ -64,31 +64,67 @@ function Detail(item){
             let first = skills.find(skill=>skill.First_Skill);
             let second = skills.find(skill => skill.Second_Skill);
             let third = skills.find(skill => skill.Third_Skill);
-            let ultimate = skills.find(skill => skill.Ultimate)
+            let ultimate = skills.find(skill => skill.Ultimate);
 
-            var header='<h2>'+Detail[i].Name+'</h2>'; // строим заголовок
+            var header='<div class="Name"><h2 class="Name_text">'+Detail[i].Name+'</h2></div>'; // строим заголовок
             text += '<div>'
             text += '<div class=" Champion_Picture"><a data-title="Champion" data-lightbox="image-1" href="' + Detail[i].Image + '"><img src="' + Detail[i].Image + '" /></a></div>'; //картинка
-            text += '<p>' + Detail[i].Biography + '</p>'; //Биография
+            text += '<div class="Bio"><p class="Bio_text">BIOGRAPHY: <br><br>' + Detail[i].Biography + '</p></div>'; //Биография
+
+            // text += '<div class="Abilities">'
+
+            // text += '<div class="Ability"><img id="btn" class="Ability_Icon" src="' + passive.Passive_Image + '">';
+            // text += '<ul id="dropdown"> <li>Passive:<br> </li> <li>' + passive.Passive + '</li> <li>How it Works: <br></li> <li>' + passive.Passive_info + '</li> </ul> </div>';
+            
+            // text += '<div class="Ability"><button id="btn"><img class="Ability_Icon" src="' + first.First_Skill_Image + '"></button>';
+            // text += '<ul id="dropdown"> <li>Q ability:<br> </li> <li>' + first.First_Skill + '</li> <li>How it Works:<br></li> <li>' + first.First_Skill_info + '</li> </ul> </div>';
+
+            // text += '<div class="Ability"><button id="btn"><img class="Ability_Icon" src="' + second.Second_Skill_Image + '"></button>';
+            // text += '<ul id="dropdown"> <li>W ability:<br> </li> <li>' + second.Second_Skill + '</li> <li>How it Works: <br></li> <li>' + second.Second_Skill_info + '</li> </ul> </div>';
+
+            // text += '<div class="Ability"><button id="btn"><img class="Ability_Icon" src="' + third.Third_Skill_Image + '"></button>';
+            // text += '<ul id="dropdown"> <li>W ability:<br> </li> <li>' + third.Third_Skill + '</li> <li>How it Works: <br></li> <li>' + third.Third_Skill_info + '</li> </ul> </div>';
+            // text += '</div>'
+
+
+
 
             text += '<div class="Abilities">'
-            text += '<div class="Ability"><div><a data-title="Passive" data-lightbox="image" href="' + passive.Passive_Image + '"><img src="' + passive.Passive_Image + '" /></a></div><p><b>Passive:<br> </b>' + passive.Passive + '</p> <p><b>How It Works: </b>' + passive.Passive_info + '</p><br><br></div>';
+            text += '<div class="Ability"><div><a data-title="Passive" data-lightbox="image" href="' + passive.Passive_Image + '"><img class="Ability_Icon" src="' + passive.Passive_Image + '" /></a></div><p><b>Passive:<br> </b>' + passive.Passive + '</p> <p><b>How It Works:<br> </b>' + passive.Passive_info + '</p><br><br></div>';
 
-            text += '<div class="Ability"><div><a data-title="Q" data-lightbox="image" href="' + first.First_Skill_Image + '"><img src="' + first.First_Skill_Image + '" /></a></div><p><b>Q Abillity:<br> </b>' + first.First_Skill + '</p> <p><b>How It Works: </b>' + first.First_Skill_info + '</p><br><br></div>';
+            text += '<div class="Ability"><div><a data-title="Q" data-lightbox="image" href="' + first.First_Skill_Image + '"><img class="Ability_Icon" src="' + first.First_Skill_Image + '" /></a></div><p><b>Q Abillity:<br> </b>' + first.First_Skill + '</p> <p><b>How It Works:<br> </b>' + first.First_Skill_info + '</p><br><br></div>';
 
-            text += '<div class="Ability"> <div><a data-title="W" data-lightbox="image" href="' + second.Second_Skill_Image + '"><img src="' + second.Second_Skill_Image + '" /></a></div><p><b>W Abillity:<br> </b>' + second.Second_Skill + '</p> <p><b>How It Works: </b>' + second.Second_Skill_info + '</p><br><br></div>';
+            text += '<div class="Ability"> <div><a data-title="W" data-lightbox="image" href="' + second.Second_Skill_Image + '"><img class="Ability_Icon" src="' + second.Second_Skill_Image + '" /></a></div><p><b>W Abillity:<br> </b>' + second.Second_Skill + '</p> <p><b>How It Works:<br> </b>' + second.Second_Skill_info + '</p><br><br></div>';
 
-            text += '<div class="Ability"><div><a data-title="Passive" data-lightbox="image" href="' + third.Third_Skill_Image + '"><img src="' + third.Third_Skill_Image + '" /></a></div><p><b>E Abillity:<br> </b>' + third.Third_Skill + '</p> <p><b>How It Works: </b>' + third.Third_Skill_info + '</p><br><br></div>';
+            text += '<div class="Ability"><div><a data-title="Passive" data-lightbox="image" href="' + third.Third_Skill_Image + '"><img class="Ability_Icon" src="' + third.Third_Skill_Image + '" /></a></div><p><b>E Abillity:<br> </b>' + third.Third_Skill + '</p> <p><b>How It Works:<br> </b>' + third.Third_Skill_info + '</p><br><br></div>';
 
-            text += '<div class="Ability"><div><a data-title="Passive" data-lightbox="image" href="' + ultimate.Ultimate_Image + '"><img src="' + ultimate.Ultimate_Image + '" /></a></div><p><b>R Abillity:<br> </b>' + ultimate.Ultimate + '</p> <p><b>How It Works: </b>' + ultimate.Ultimate_info + '</p><br><br></div>';
+            text += '<div class="Ability"><div><a data-title="Passive" data-lightbox="image" href="' + ultimate.Ultimate_Image + '"><img class="Ability_Icon" src="' + ultimate.Ultimate_Image + '" /></a></div><p><b>R Abillity:<br> </b>' + ultimate.Ultimate + '</p> <p><b>How It Works:<br> </b>' + ultimate.Ultimate_info + '</p><br><br></div>';
             text += '</div>'
 
 
-            text += '<p><a href="#" onClick="myContent(`' + Detail[i].Lane + '`)">Back to another champions</a></p>'; //ссылка на возврат к другим чемпионам
+            text += '<div class="BackButton"><p ><a class="BackButton_text" href="#" onClick="myContent(`' + Detail[i].Lane + '`)">Back to another champions</a></p>'; //ссылка на возврат к другим чемпионам
             text+='</div>';
         }//for
         $("#content").html(header+text);//вывод на страницу
+
+        // var button = document.getElementById("btn");
+        // const dropdown = document.getElementById("dropdown");
+
+        // dropdown.style.display = "none";
+
+        // button.addEventListener(("click"), (event) => {
+        //     if (dropdown.style.display == 'none') {
+        //         dropdown.style.display = 'block';
+        //     } else {
+        //         dropdown.style.display = 'none';
+        //     }
+        // });
     }else{
         $("#content").html(header+"Данных нет");
     }
 };//end function Detail
+
+function DropDown() {
+
+
+}

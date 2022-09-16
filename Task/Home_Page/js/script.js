@@ -71,23 +71,10 @@ function Detail(item){
             text += '<div class=" Champion_Picture"><a data-title="Champion" data-lightbox="image-1" href="' + Detail[i].Image + '"><img src="' + Detail[i].Image + '" /></a></div>'; //картинка
             text += '<div class="Bio"><p class="Bio_text">BIOGRAPHY: <br><br>' + Detail[i].Biography + '</p></div>'; //Биография
 
-            // text += '<div class="Abilities">'
 
             // text += '<div class="Ability"><img id="btn" class="Ability_Icon" src="' + passive.Passive_Image + '">';
             // text += '<ul id="dropdown"> <li>Passive:<br> </li> <li>' + passive.Passive + '</li> <li>How it Works: <br></li> <li>' + passive.Passive_info + '</li> </ul> </div>';
             
-            // text += '<div class="Ability"><button id="btn"><img class="Ability_Icon" src="' + first.First_Skill_Image + '"></button>';
-            // text += '<ul id="dropdown"> <li>Q ability:<br> </li> <li>' + first.First_Skill + '</li> <li>How it Works:<br></li> <li>' + first.First_Skill_info + '</li> </ul> </div>';
-
-            // text += '<div class="Ability"><button id="btn"><img class="Ability_Icon" src="' + second.Second_Skill_Image + '"></button>';
-            // text += '<ul id="dropdown"> <li>W ability:<br> </li> <li>' + second.Second_Skill + '</li> <li>How it Works: <br></li> <li>' + second.Second_Skill_info + '</li> </ul> </div>';
-
-            // text += '<div class="Ability"><button id="btn"><img class="Ability_Icon" src="' + third.Third_Skill_Image + '"></button>';
-            // text += '<ul id="dropdown"> <li>W ability:<br> </li> <li>' + third.Third_Skill + '</li> <li>How it Works: <br></li> <li>' + third.Third_Skill_info + '</li> </ul> </div>';
-            // text += '</div>'
-
-
-
 
             text += '<div class="Abilities">'
             text += '<div class="Ability"><div><a data-title="Passive" data-lightbox="image" href="' + passive.Passive_Image + '"><img class="Ability_Icon" src="' + passive.Passive_Image + '" /></a></div><p><b>Passive:<br> </b>' + passive.Passive + '</p> <p><b>How It Works:<br> </b>' + passive.Passive_info + '</p><br><br></div>';

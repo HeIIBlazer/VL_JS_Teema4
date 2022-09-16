@@ -1,4 +1,4 @@
-var category = ["Home Page","Top lane","Jungle","Mid Lane","ADC","Support", "PLAY"];
+var category = ["Home Page","Top lane","Jungle","Mid Lane","ADC","Support"];
 
 var Home_Page_Content = [
     {

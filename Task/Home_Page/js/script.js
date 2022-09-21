@@ -77,15 +77,15 @@ function Detail(item){
             
 
             text += '<div class="Abilities">'
-            text += '<div class="Ability"><div><a data-title="Passive" data-lightbox="image" href="' + passive.Passive_Image + '"><img class="Ability_Icon" src="' + passive.Passive_Image + '" /></a></div><p><b>Passive:<br> </b>' + passive.Passive + '</p> <p><b>How It Works:<br> </b>' + passive.Passive_info + '</p><br><br></div>';
+            text += '<div class="Ability"><div><a data-title="Passive" data-lightbox="image" href="' + passive.Passive_Image + '"><img class="Ability_Icon" src="' + passive.Passive_Image + '" /></a></div> <div id="btn1" class="arrow"><h1 class="Arrow"> MORE INFO </h1></div> <div class="dropdown1"><p><b>Passive:<br> </b>' + passive.Passive + '</p> <p><b>How It Works:<br> </b>' + passive.Passive_info + '</p></div><br><br></div>';
 
-            text += '<div class="Ability"><div><a data-title="Q" data-lightbox="image" href="' + first.First_Skill_Image + '"><img class="Ability_Icon" src="' + first.First_Skill_Image + '" /></a></div><p><b>Q Abillity:<br> </b>' + first.First_Skill + '</p> <p><b>How It Works:<br> </b>' + first.First_Skill_info + '</p><br><br></div>';
+            text += '<div class="Ability"><div><a data-title="Q" data-lightbox="image" href="' + first.First_Skill_Image + '"><img class="Ability_Icon" src="' + first.First_Skill_Image + '" /></a></div> <div id="btn2" class="arrow"><h1 class="Arrow"> MORE INFO </h1></div> <div class="dropdown2"><p><b>Q Abillity:<br> </b>' + first.First_Skill + '</p> <p><b>How It Works:<br> </b>' + first.First_Skill_info + '</p></div><br><br></div>';
 
-            text += '<div class="Ability"> <div><a data-title="W" data-lightbox="image" href="' + second.Second_Skill_Image + '"><img class="Ability_Icon" src="' + second.Second_Skill_Image + '" /></a></div><p><b>W Abillity:<br> </b>' + second.Second_Skill + '</p> <p><b>How It Works:<br> </b>' + second.Second_Skill_info + '</p><br><br></div>';
+            text += '<div class="Ability"> <div><a data-title="W" data-lightbox="image" href="' + second.Second_Skill_Image + '"><img  class="Ability_Icon" src="' + second.Second_Skill_Image + '" /></a></div> <div id="btn3" class="arrow"><h1 class="Arrow"> MORE INFO </h1></div> <div class="dropdown3"><p><b>W Abillity:<br> </b>' + second.Second_Skill + '</p> <p><b>How It Works:<br> </b>' + second.Second_Skill_info + '</p></div><br><br></div>';
 
-            text += '<div class="Ability"><div><a data-title="Passive" data-lightbox="image" href="' + third.Third_Skill_Image + '"><img class="Ability_Icon" src="' + third.Third_Skill_Image + '" /></a></div><p><b>E Abillity:<br> </b>' + third.Third_Skill + '</p> <p><b>How It Works:<br> </b>' + third.Third_Skill_info + '</p><br><br></div>';
+            text += '<div class="Ability"><div><a data-title="Passive" data-lightbox="image" href="' + third.Third_Skill_Image + '"><img class="Ability_Icon" src="' + third.Third_Skill_Image + '" /></a></div> <div id="btn4" class="arrow"><h1 class="Arrow"> MORE INFO </h1></div> <div class="dropdown4"><p><b>E Abillity:<br> </b>' + third.Third_Skill + '</p> <p><b>How It Works:<br> </b>' + third.Third_Skill_info + '</p></div><br><br></div>';
 
-            text += '<div class="Ability"><div><a data-title="Passive" data-lightbox="image" href="' + ultimate.Ultimate_Image + '"><img class="Ability_Icon" src="' + ultimate.Ultimate_Image + '" /></a></div><p><b>R Abillity:<br> </b>' + ultimate.Ultimate + '</p> <p><b>How It Works:<br> </b>' + ultimate.Ultimate_info + '</p><br><br></div>';
+            text += '<div class="Ability"><div><a data-title="Passive" data-lightbox="image" href="' + ultimate.Ultimate_Image + '"><img class="Ability_Icon" src="' + ultimate.Ultimate_Image + '" /></a></div> <div id="btn5" class="arrow"><h1 class="Arrow"> MORE INFO </h1></div> <div class="dropdown5"><p><b>R Abillity:<br> </b>' + ultimate.Ultimate + '</p> <p><b>How It Works:<br> </b>' + ultimate.Ultimate_info + '</p></div><br><br></div>';
             text += '</div>'
 
 
@@ -94,18 +94,41 @@ function Detail(item){
         }//for
         $("#content").html(header+text);//вывод на страницу
 
-        // var button = document.getElementById("btn");
-        // const dropdown = document.getElementById("dropdown");
+        // Dropdown Abilities
+        $(document).ready(function () {
+            $('.dropdown1').hide();
+            $('.dropdown2').hide();
+            $('.dropdown3').hide();
+            $('.dropdown4').hide();
+            $('.dropdown5').hide();
 
-        // dropdown.style.display = "none";
+            $('#btn1').click(function () {
+                $(this).next().slideToggle(400, 'swing');
 
-        // button.addEventListener(("click"), (event) => {
-        //     if (dropdown.style.display == 'none') {
-        //         dropdown.style.display = 'block';
-        //     } else {
-        //         dropdown.style.display = 'none';
-        //     }
-        // });
+            });
+
+            $('#btn2').click(function () {
+                $(this).next().slideToggle(400, 'swing');
+            });
+
+            $('#btn3').click(function () {
+                $(this).next().slideToggle(400, 'swing');
+
+
+            });
+
+            $('#btn4').click(function () {
+                $(this).next().slideToggle(400, 'swing');
+
+            });
+
+            $('#btn5').click(function () {
+                $(this).next().slideToggle(400, 'swing');
+
+            });
+        });
+
+
     }else{
         $("#content").html(header+"Данных нет");
     }

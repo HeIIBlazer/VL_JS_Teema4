@@ -4,6 +4,13 @@ body {
     background-size: cover;
 }
 
+@font-face {
+    font-family: 'LeagueFont';
+    src: url(Font/Friz\ Quadrata\ Regular.ttf),
+        url(Font/Friz\ Quadrata\ Bold.otf),
+        url(Font/Friz\ Quadrata\ Italic),
+        url(Font/Friz\ Quadrata\ Std\ Medium.otf);
+}
 .logo_mini {
     padding-top:4px;
     height: 100px;
@@ -13,7 +20,7 @@ body {
 nav {
     display: flex;
     flex-direction: row;
-    background: rgba(226, 183, 183, 0.2);
+    background: rgba(39, 36, 36, 0.315);
 }
 
 nav ul {
@@ -36,21 +43,27 @@ nav ul li {
     text-align: center;
     transition: ease all .5s;
     border: 1px solid;
-    background-color:rgb(180, 164, 75);
+    background-image: url(Images/HomePage/Abilities_Background.JPG);
 
 }
 
 nav ul li:hover {
     border-radius: 77px;
     transition: ease all .5s;
+    
 }
 
 
 nav ul li a {
     color: rgb(47, 117, 119);
     text-decoration: none;
+    font-family: LeagueFont;
 }
 
+nav ul li a:hover {
+    color: white;
+    text-decoration: none;
+}
 p {
     color: white;
 }
@@ -74,8 +87,9 @@ h2{
     border: 3px solid;
     border-color: black;
     border-radius: 40px;
-    background-color: rgba(180, 164, 75, 0.721);
-    color: rgb(26, 103, 106);
+    background-image: url(Images/HomePage/Abilities_Background.JPG);
+    font-family: LeagueFont;
+    color: rgb(122, 144, 145);
 }
 
 .Home_Page {
@@ -95,7 +109,7 @@ h2{
     font-size: 40px;
     width: 1750px;
     text-align: center;
-    background-color: rgba(118, 101, 101, 0.441);
+    background-color: rgba(148, 144, 144, 0.562);
     color: black;
 }
 
@@ -109,15 +123,14 @@ h2{
 .Mini_Loading{
     display:flex;
     flex-direction: column;
-    padding-right: 100px;
-
-
+    margin: 50px;
 }
 
 .Big_Loading{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
 }
 
 .Text_Loading{
@@ -125,17 +138,17 @@ h2{
     flex-direction: column;
     align-items: center;
     border: 1px solid;
-    background-color:rgba(63, 62, 62, 0.441) ;
-    
-
+    background-color: rgba(63, 62, 62, 0.441);
 }
 
 .Champ_Name{
-    font-size: 28px;
+    font-size: 37px;
     font-weight: 800;
-    color: black;
-    background-color: rgba(63, 62, 62, 0.441);
+    color: rgb(176, 204, 206);
+    background-image: url(Images/HomePage/Abilities_Background.JPG);
     border-radius:10px ;
+    font-family: LeagueFont;
+    padding: 10px;
 }
 
 .Text_Loading a{
@@ -146,4 +159,121 @@ h2{
     border: 1px solid;
     border-radius: 10px;
     background-color: rgba(180, 164, 75, 0.721);
+    font-family: LeagueFont;
+}
+
+.Champion_Picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Name{
+    display: flex;
+    justify-content: center;
+}
+
+.Name_text{
+    font-family: LeagueFont;
+    font-size: 45px;
+    letter-spacing: 0.1em;
+    border: 3px solid rgba(180, 164, 75, 0.721);
+    border-radius: 10px;
+    background-image: url(Images/HomePage/Abilities_Background.JPG);
+    padding:10px;
+}
+
+.Bio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.Bio_text{
+    width: 70%;
+    font-family: LeagueFont;
+    background-image: url(Images/HomePage/Abilities_Background.JPG);
+    font-size: 25px;
+    border: 1px solid;
+    border: 1px solid rgba(180, 164, 75, 0.721);
+    padding:15px;
+
+}
+
+.Abilities {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center
+}
+
+.Ability {
+    display: flex;
+    flex-direction: column;
+    background-image: url(Images/HomePage/Abilities_Background.JPG);
+    background-size: cover;
+    border: 1px solid rgba(180, 164, 75, 0.721);
+    width: 18%;
+    text-align: center;
+    margin-right: 20px;
+    height: 100%;
+}
+
+.Ability p {
+    font-size: 36px;
+    font-family: LeagueFont;
+    padding: 15px;
+}
+    
+ul {
+    list-style: none;
+}
+    
+.Ability_Icon {
+    width: 37%;
+    height: 90%;
+    margin-top: 10px;
+    border: 4px solid rgba(180, 164, 75, 0.721);
+}
+
+.BackButton{
+    display:flex;
+    justify-content: center;
+    margin-top:20px;
+}
+
+.BackButton_text{
+    width: 70%;
+    font-family: LeagueFont;
+    background-image: url(Images/HomePage/Abilities_Background.JPG);
+    font-size: 25px;
+    text-align: center;
+    border: 3px solid rgba(180, 164, 75, 0.721);
+    padding:15px;
+    text-decoration:none;
+    color: #fff;
+    margin-top:100px;
+}
+.Arrow {
+    width: 50%;
+    height: 25%;
+    background-image: url(Images/HomePage/Abilities_Background.JPG);
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    border: 3px solid rgba(180, 164, 75, 0.721);
+    border-radius: 40px;
+    font-family: LeagueFont;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
 }
